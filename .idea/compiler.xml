@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springboot-profile" />
         <module name="springboot-helloworld" />
         <module name="springboot-commandLineRunner" />
+        <module name="springboot-docker-jpa" />
         <module name="springboot-docker" />
       </profile>
     </annotationProcessing>
