@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-helloworld" />
+        <module name="springboot-commandLineRunner" />
+        <module name="springboot-docker" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,7 +18,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="springboot-helloworld" options="-parameters" />
+      <module name="springboot-helloworld" options="" />
       <module name="springboot-helloworld (1) (com.jupiterboy.springboot)" options="-parameters" />
     </option>
   </component>

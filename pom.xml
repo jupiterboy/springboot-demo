@@ -11,6 +11,9 @@
     <modules>
         <module>springboot-helloworld</module>
         <module>springboot-commandLineRunner</module>
+        <module>springboot-docker</module>
+        <module>springboot-docker-jpa</module>
+        <module>springboot-profile</module>
     </modules>
     <parent>
         <artifactId>spring-boot-parent</artifactId>
