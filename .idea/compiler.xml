@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-profile" />
-        <module name="springboot-helloworld" />
         <module name="springboot-commandLineRunner" />
+        <module name="springboot-helloworld" />
+        <module name="springboot-mongodb" />
         <module name="springboot-docker-jpa" />
+        <module name="springboot-redis" />
         <module name="springboot-docker" />
+        <module name="spring-boot-kafka" />
+        <module name="springboot-profile" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

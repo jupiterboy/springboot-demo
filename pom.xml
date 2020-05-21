@@ -16,6 +16,7 @@
         <module>springboot-profile</module>
         <module>springboot-redis</module>
         <module>springboot-mongodb</module>
+        <module>springboot-kafka</module>
     </modules>
     <parent>
         <artifactId>spring-boot-parent</artifactId>
