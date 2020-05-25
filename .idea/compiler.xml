@@ -9,6 +9,8 @@
         <module name="springboot-commandLineRunner" />
         <module name="springboot-helloworld" />
         <module name="springboot-mongodb" />
+        <module name="springboot-kafka" />
+        <module name="springboot-jpa" />
         <module name="springboot-docker-jpa" />
         <module name="springboot-redis" />
         <module name="springboot-docker" />
@@ -19,6 +21,7 @@
     <bytecodeTargetLevel>
       <module name="springboot-helloworld (1) (com.jupiterboy.springboot)" target="1.8" />
       <module name="springboot-helloworld (2)" target="1.8" />
+      <module name="springboot-kafka" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
