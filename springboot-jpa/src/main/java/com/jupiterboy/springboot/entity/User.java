@@ -8,10 +8,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
+@GenericGenerator(name = "system-uuid", strategy = "org.hibernate.id.UUIDGenerator")
 public class User {
     @Id
     @GeneratedValue(generator = "system-uuid")
-    @GenericGenerator(name = "system-uuid", strategy = "uuid")
     private String id;
     @Column(nullable = false, unique = true)
     private String userName;
