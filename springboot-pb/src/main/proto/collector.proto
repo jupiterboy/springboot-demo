@@ -1,0 +1,505 @@
+﻿syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+option java_package = "com.tcb.sts.station.msg";
+ 
+//消息结构
+//   	|-- Collector
+//   	    |-- Channel(1)
+//   	       |-- Parameter
+//   	       |-- Value
+//  	     |-- Channel(2)
+//   	       |-- Parameter
+//    		   |-- Value
+//       		        。
+//       		        。
+//       		        。
+//          |-- Channel(n)
+//             |-- Parameter
+//             |-- Value
+
+//1.采集器
+message CollectorMessage{
+	string collectorId                     = 1;//采集器id
+	string stationId                       = 2;//监控站id
+	bool restart                           = 3;//采集器重启标识
+	repeated ChannelMessage channelMessage = 4;//采集器通道消息
+	bool update                            = 5;//升级标识
+	UpdateMessage updateMessage            = 6;//升级消息
+	fixed32 freq                           = 7;//采集器待机时上报频率
+	double threshold                       = 8;//采集器是否待机的阈值
+	double mutation                        = 9;//采集器振动是否突变的阈值
+	string collectorType                   = 10;//采集器类型
+	string collectorSn                     = 11;//采集器SN
+
+	CollectorType type                     = 20;//采集器类型
+	ModularCollector modular_collector     = 21; //模块化采集器消息
+}
+
+enum CollectorType{
+	UNKNOWN  = 0x00000000; 
+	COLLECTOR_TYPE_COMPACT  = 0x00000001;
+	COLLECTOR_TYPE_MODULAR  = 0x00000002;
+	RESERVE1 = 0x00000003;
+	RESERVE2 = 0x00000004;
+}
+
+
+//1.1 升级消息
+message UpdateMessage{
+	bytes data = 1;//升级文件数据
+	string md5 = 2;
+}
+
+//1.2 通道
+message ChannelMessage{
+	fixed32 number                    = 1;//通道号
+	ChannelType type                  = 2;//通道类型
+	ParameterMessage parameterMessage = 3;//通道参数
+	ValueMessage valueMessage         = 4;//通道数值
+	fixed32 random                    = 5;//同步索引号，每组一个随机数
+	
+	enum ChannelType{
+		UNKNOWN          = 0x00000000;	//
+		VIBRATE          = 0x00000001;	//震动
+		OIL              = 0x00000002;	//油品（油温+介电常数）
+		WINDING_TEMP	 = 0x00000003;	//绕组温度
+		BEARING_TEMP     = 0x00000004;	//轴承温度
+		PTC              = 0x00000005;	//热敏电阻
+		LIQUID_LEVEL     = 0x00000006;	//液位检测
+		BRAKE            = 0x00000007;	//制动检测
+		BIMETAL          = 0x00000008;	//双金属片检测
+		ROTATIONAL_SPEED = 0x00000009;	//电机转速
+		OVERLOAD         = 0x0000000A;	//过载电流
+		OIL_PRESSURE     = 0x0000000B;	//油压
+		EXTENDED         = 0x0000000F;  //第三方扩展通道
+	}
+}
+
+//1.3 通道参数
+message ParameterMessage{
+	fixed32 freq             = 1;//上报数据间隔,单位:秒
+	bool sync                = 2;//是否同步采集
+	fixed32 group            = 3;//同步组号
+	
+	VibrateParameterMessage vibrateParameterMessage = 4;
+	ExtendedParam extendedParam = 5; //如果是第三方扩展通道则该变量需设置具体的参数
+	message VibrateParameterMessage{
+		fixed32 freq  = 1; //采样频率
+		fixed32 count = 2; //采样点数
+	}
+
+	message ExtendedParam{
+		ParamRs485 paramRs485 = 1;  //配置rs485的参数
+		fixed32 startAddr = 2; //寄存器启始地址（地址实际占低两个字节，高两个字节为0）
+		fixed32 registerNum = 3; //寄存器个数
+		fixed32 command = 4;  //命令字
+		fixed32 slaveAddr = 5; //从设备地址
+	}
+	
+	message ParamRs485{
+		BaudRate baudRate = 1;  //波特率
+		fixed32 dataSize = 2;   //数据位
+		fixed32 stopSize = 3;   //停止位
+		Parity  parity = 4;     //校验位
+		enum Parity{
+			NONE = 0x00000000; //无奇偶校验
+			ODD  = 0x00000001; //奇校验
+			EVEN = 0x00000002; //偶校验
+		}
+		enum BaudRate{
+			UNKNOWN = 0x00000000;
+			R1200   = 0x00000001;
+			R2400   = 0x00000002;
+			R4800   = 0x00000003;
+			R9600   = 0x00000004;
+			R19200  = 0x00000005;
+			R38400  = 0x00000006;
+			R57600  = 0x00000007;
+			R115200 = 0x00000008;
+			R230400 = 0x00000009;
+		}
+	}
+}
+
+//1.4 通道数值
+message ValueMessage{
+	VibrateValueMessage vibrateValueMessage                 = 1;
+	OilValueMessage oilValueMessage                         = 2;
+	WindingTempValueMessage windingTempValueMessage         = 3;
+	BearingTempValueMessage bearingTempValueMessage         = 4;
+	PTCValueMessage ptcValueMessage                         = 5;
+	LiquidLevelValueMessage liquidLevelValueMessage         = 6;
+	BrakeValueMessage brakeValueMessage                     = 7;
+	BimetalValueMessage bimetalValueMessage                 = 8;
+	RotationalSpeedValueMessage rotationalSpeedValueMessage = 9;
+	OverLoadValueMessage overLoadValueMessage               = 10;
+	OilPressuredValueMessage oilPressuredValueMessage       = 11;
+	ExtendedValue extendedValue                             = 12;
+	
+	message VibrateValueMessage{
+		repeated fixed32 value    = 1;
+        bool mutationFlag         = 2;
+	}
+	
+	message OilValueMessage{
+		double treacliness 			= 1; 
+		double density 				= 2;
+		double dielectricConstant 	= 3; 
+		double temperature 			= 4;
+		double waterContent 		= 5;
+		double pollutionLevel 		= 6;
+	}
+	
+	message WindingTempValueMessage{
+		double value = 1; 
+	}
+	
+	message BearingTempValueMessage{
+	    double value = 1;
+	}
+	
+	message PTCValueMessage{
+		double value = 1; 
+	}
+	
+	message LiquidLevelValueMessage{
+		fixed32 value = 1; 
+	}
+	
+	message BrakeValueMessage{
+		fixed32 value = 1;
+	}
+	
+	message BimetalValueMessage{
+		fixed32 value = 1; 
+	}
+	
+	message RotationalSpeedValueMessage{
+		double value = 1;
+	}
+	
+	message OverLoadValueMessage{
+		double voltage = 1;
+	    double current = 2;
+	}
+		
+	message OilPressuredValueMessage{
+		fixed32 value = 1;
+	}
+	
+	message ExtendedValue{
+		bytes data = 1;
+		string startTime = 2;
+		repeated float value = 3;
+	}
+}
+
+
+//2. 模块化采集器
+enum ModularType{
+	NONE        = 0x00000000;     
+	MASTER      = 0x00000001;//主模组
+	VIBRATE     = 0x00000002;//振动模组
+	TEMPERATURE = 0x00000003;//温度模组
+	CURRENT     = 0x00000004;//电流模组
+	RES1        = 0x00000005;//预留1, 用在升级消息中指定为系统配置升级文件
+	RES2        = 0x00000006;//预留2
+}
+
+message ModularCollector{
+	string collectorId = 1;//采集器id
+	string stationId   = 2;//监控站id
+	bool   restart     = 3;//采集器重启标识
+	repeated ModularChannel channelMsg = 4;//采集器通道消息
+	bool update         = 5;//升级标识
+	UpdateMsg updateMsg = 6;//升级消息
+	Version version     = 8;//版本信息,删除了错误消息7
+	bytes logInfo       = 9;//log日志信息
+	uint32 networkTime  = 10;//网络时间
+	message Version{
+		repeated ModularVersion modularVersion = 1; //各模块版本信息
+		message ModularVersion{
+			ModularType  modularType = 1;//模组型号
+			string  software_version = 2;//软件版本
+			string  hardware_version = 3;//硬件版本
+			string  serial_number    = 4;//序列号
+			fixed32 position         = 5;//位置，主模组是1,然后分别是2,3,4,5
+		}
+	}
+}
+
+//2.1 升级消息
+message UpdateMsg{
+	repeated ModularUpdate modularUpdate = 1; //模块升级信息
+	message ModularUpdate{
+		ModularType modularType = 1; //模组类型,升级配置文件使用RES1类型
+		string software_version = 2; //软件版本
+		string hardware_version = 3; //硬件版本
+		bytes data = 4;              //升级文件数据
+		string md5 = 5;              //升级文件的md5值
+	}
+}
+
+message FaultMsg{
+	FaultType faultType = 1; //故障类型
+	enum FaultType{
+		ERR_NONE = 0x00000000;  // 无故障
+		ERR_COMMUNCATION = 1; // 连接故障
+		ERR_PARAMETER = 2; //  参数故障
+		ERR_SAMPLING = 3;  //  采样故障
+		ERR_OTHRE = 4;    // 其他故障
+	}
+}
+//2.2 通道
+message ModularChannel{
+	fixed32 number                    = 1;//通道号
+	ChannelType type                  = 2;//通道类型
+	ChannelParam channelParam         = 3;//通道参数
+	ChannelValue channelValue         = 4;//通道数值	
+	ChannelRule channelRule           = 5;//通道规则，周期性采样上报还是一次性等
+	FaultMsg faultmsg                 = 6;//通道错误消息
+	
+	enum ChannelType{
+		UNKNOWN          = 0x00000000; 
+		VIBRATE          = 0x00000001;	//震动
+		OIL              = 0x00000002;	//油品（油温+介电常数）
+		PTC              = 0x00000005;	//热敏电阻
+		LIQUID_LEVEL     = 0x00000006;	//液位检测
+		ROTATIONAL_SPEED = 0x00000009;	//转速
+		OIL_PRESSURE     = 0x0000000B;	//油压
+		TEMPERATURE   	 = 0x0000000C;	//温度
+		SWITCHING        = 0x0000000D;	//开关量
+		CURRENT          = 0x0000000E;	//电流
+		EXTENDED         = 0x0000000F;  //第三方扩展通道
+		WIFI             = 0x00000020;  //WIFI状态
+		GSM              = 0x00000021;  //移动网络状态
+		CUSTOM           = 0x00000022;  //自定义类型
+ 		RESERVE1         = 0x00000010;  //预留1
+		RESERVE2         = 0x00000011;  //预留2
+	}
+	enum ChannelRule{
+		SITTING          = 0x00000000;   //占位，无实际意义
+		PERIODICITY      = 0x00000001;   //周期性
+		DISPOSABLE       = 0x00000002;   //一次性
+	}
+}
+
+//2.3 通道参数
+message ChannelParam{
+	fixed32 uploadFreq  = 1;//上报数据间隔,单位:秒
+	bool sync           = 2;//是否同步采集
+	fixed32 syncGroup   = 3;//同步组号	
+	VibrateParam vibrateParam   = 4; //振动通道则该变量需设置具体的参数
+	RSParam rsParam             = 5; //转速通道则该变量需设置具体的参数
+	CurrentParam currentParam   = 6; //电流通道则该变量需设置具体的参数
+	ExtendedParam extendedParam = 7; //第三方扩展通道则该变量需设置具体的参数
+	CustomParam customParam     = 8; //自定义通道类型则该变量需设置具体的参数
+	fixed64 index               = 9; //手动采集时则需要设置具体参数 
+	
+	message VibrateParam{
+		fixed32 freq  = 1; //采样频率
+		fixed32 count = 2; //采样点数
+		fixed32 standbyUploadFreq  = 3;//采集器待机时上报频率
+		double  standbyThreshold   = 4;//采集器是否待机的阈值
+		double  vibrateMutation    = 5;//采集器振动是否突变的阈值		
+		bool  master               = 6;//是否为振动主通道
+		fixed32 mutationUploadFreq = 7;//采集器突变时上报频率
+		fixed32 transferCoefficient   = 8;//振动传感器转换系数
+		double amplifyCoefficient    =9;//振动传感器放大系数
+
+	}
+
+	message RSParam{
+		RSSource source          = 1;//转速数据来源
+		sint32 RPM4ma           = 2;//如果来源是电流，配置4ma电流对应的转速
+		sint32 RPM20ma          = 3;//如果来源是电流，配置20ma电流对应的转速
+		ParamRs485 paramRs485    = 4;//如果来源是rs485，配置rs485的参数
+		string inverterType      = 5;//如果来源是rs485,配置变频器的型号
+		double  standbyThreshold = 6;//采集器是否工作的阈值
+		bool  master             = 7;//是否是主转速通道
+		fixed32 freq             = 8;//手动采集时的采样频率
+		fixed32 count            = 9;//手动采集时的采样点数
+		fixed32 noppc            = 10;	//如果来源是PULSE,配置单圈脉冲数
+		enum RSSource{
+			UNKNOWN = 0x00000000; 
+			CURRENT = 0x00000001;  //电流
+			RS485   = 0x00000002;  //RS485
+			PWM     = 0x00000003;  //PWM
+			PULSE   = 0x00000004;  	//脉冲计数方式
+		}
+	}
+
+	message CurrentParam{
+		CurrentSource source = 1;//电流数据来源，可以是从电流模组获取的各种传感器的或者电机的，也可以是变频器的485读取的
+		sint32 variable4ma  = 2;//如果来源是电流，配置4ma电流对应的物理值
+		sint32 variable20ma = 3;//如果来源是电流，配置20ma电流对应的物理值
+		ConnectionType connectionType = 4;//电机的接线方式
+		double mutualFactor   = 5;//互感系数
+		ParamRs485 paramRs485 = 6;//如果来源是rs485，配置rs485的参数
+		string inverterType   = 7;//如果来源是rs485,配置变频器的型号
+		fixed32 freq          = 8;//手动采集时的采样频率
+		fixed32 count         = 9;//手动采集时的采样点数
+		enum CurrentSource{
+			UNKNOWN = 0x00000000; 
+			CURRENT = 0x00000001;  //电流模组
+			RS485   = 0x00000002;  //RS485
+		}
+		enum ConnectionType{
+			NONE = 0x00000000; 
+			STAR = 0x00000001;  //星型接线
+			TRIANGLE = 0x00000002;  //三角形接线
+		}
+	}
+
+	message ExtendedParam{
+		ParamRs485 paramRs485 = 1;//配置rs485的参数
+		fixed32 startAddr     = 2;//启始地址（实际占低两个字节，高两个为0）
+		fixed32 registerNum   = 3;//寄存器个数
+		fixed32 command       = 4;//命令字
+		fixed32 slaveAddr     = 5;//从设备地址
+		ModbusMode mode       = 6;		//主从模式
+		enum ModbusMode{
+			UNKNOWN = 0x00000000;
+			SLAVE  = 0x00000001;  		//从模式
+			MASTER = 0x00000002;  	//主模式
+		}
+
+	}
+	
+	message ParamRs485{
+		BaudRate baudRate = 1;  //波特率
+		fixed32 dataSize  = 2;  //数据位
+		fixed32 stopSize  = 3;  //停止位
+		Parity  parity    = 4;  //校验位
+		enum Parity{
+			NONE = 0x00000000; //无奇偶校验
+			ODD  = 0x00000001; //奇校验
+			EVEN = 0x00000002; //偶校验
+		}
+		enum BaudRate{
+			UNKNOWN = 0x00000000;
+			R1200   = 0x00000001;
+			R2400   = 0x00000002;
+			R4800   = 0x00000003;
+			R9600   = 0x00000004;
+			R19200  = 0x00000005;
+			R38400  = 0x00000006;
+			R57600  = 0x00000007;
+			R115200 = 0x00000008;
+			R230400 = 0x00000009;
+		}
+	}
+	message CustomParam{
+		double variable4ma = 1;   //配置4ma电流对应的物理值
+		double variable20ma = 2;  //配置20ma电流对应的物理值
+	}
+}
+
+//2.4 通道数值
+message ChannelValue{
+	VibrateValue         vibrateValue         = 1;
+	OilValue             oilValue             = 2;
+	TempValue            tempValue            = 3;
+	PTCValue             ptcValue             = 4;
+	LiquidLevelValue     liquidLevelValue     = 5;
+	SwitchingValue       switchingValue       = 6;
+	RotationalSpeedValue rotationalSpeedValue = 7;
+	CurrentValue         currentValue         = 8;
+	OilPressureValue     oilPressureValue     = 9;
+	ExtendedValue        extendedValue        = 10;
+	WIFIValue            wifiValue            = 11;
+	GSMValue             gsmValue             = 12;
+	CustomValue          customValue          = 13;
+	message VibrateValue{
+		repeated fixed32 value    = 1;
+		bool mutationFlag         = 2;
+		bool standbyStatus        = 3;
+		string startTime          = 4;
+		repeated sint32 acc       = 5;
+	}
+	
+	message OilValue{
+		double treacliness 			= 1; 
+		double density 				= 2;
+		double dielectricConstant 	= 3; 
+		double temperature 			= 4;
+		double waterContent 		= 5;
+		double pollutionLevel 		= 6;
+		string startTime			= 7;
+	}
+	
+	message TempValue{
+		double value = 1; 
+		string startTime = 2;
+	}	
+	
+	message PTCValue{
+		double value = 1; 
+		string startTime  = 2;
+	}
+	
+	message LiquidLevelValue{
+		fixed32 value = 1; 
+		string startTime  = 2;
+	}
+	
+	
+	message SwitchingValue{
+		fixed32 value = 1; 
+		string startTime  = 2;
+	}
+	
+	message RotationalSpeedValue{
+		double value = 1;//单位rpm
+		string startTime = 2;
+		repeated double rs = 3;
+	}
+	
+	message CurrentValue{
+		double value = 1;  //电流转换成实际的物理量
+		double current = 2;//采集到的电流值ma
+		string startTime = 3;
+		repeated double curArr = 4;//手动采集时按照采集参数的要求采集
+	}
+		
+	message OilPressureValue{
+		fixed32 value = 1;
+		string startTime = 2;
+	}
+	
+	message ExtendedValue{
+		bytes data = 1;
+		string startTime = 2;
+		repeated float value = 3;
+	}
+
+	message WIFIValue{
+		fixed32 value = 1;
+		string startTime = 2;
+		WIFIStatus status = 3;
+		enum WIFIStatus{
+			UNKNOWN = 0x00000000;
+			OK = 0x00000001;
+			ERR = 0x00000002;
+			DISCONNECTED = 0x00000003;
+		}
+	}
+	
+	message GSMValue{
+		fixed32 value = 1;  //rssi
+		string startTime = 2;
+		GSMStatus  status = 3;
+		enum GSMStatus{
+			UNKNOWN = 0x00000000;
+			OK = 0x00000001;
+			ERR = 0x00000002;
+			DISCONNECTED = 0x00000003;
+		}
+	}
+	
+	message CustomValue{
+		double value = 1;  //电流转换成实际的物理量
+		double current = 2;//采集到的电流值ma
+		string startTime = 3;
+	}
+}
