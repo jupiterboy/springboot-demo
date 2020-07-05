@@ -17,7 +17,12 @@
         <module>springboot-redis</module>
         <module>springboot-mongodb</module>
         <module>springboot-jpa</module>
-
+        <module>springboot-ehcache</module>
+        <module>springboot-mina</module>
+        <module>springboot-zookeeper</module>
+        <module>springboot-netty</module>
+        <module>springboot-pb</module>
+        <module>springboot-vertx</module>
     </modules>
     <parent>
         <artifactId>spring-boot-parent</artifactId>

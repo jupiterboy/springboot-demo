@@ -7,17 +7,29 @@
     <file url="file://$PROJECT_DIR$/springboot-docker-jpa/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-docker/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-docker/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-ehcache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-ehcache/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-helloworld/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-helloworld/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-jpa/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-jpa/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-kafka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-kafka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-mina/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-mina/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-mongodb/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-mongodb/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-netty/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-netty/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-pb/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-pb/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-profile/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-profile/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-vertx/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-vertx/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-zookeeper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-zookeeper/src/main/resources" charset="UTF-8" />
   </component>
 </project>
