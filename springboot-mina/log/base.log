@@ -1,0 +1,30 @@
+2019-04-15 09:02:40,361 INFO (StartupInfoLogger.java:48)- Starting DemoApplication on YuHai with PID 9152 (E:\workbench\java-workspace\springboot\spring-boot-mina\target\classes started by Admin in E:\workbench\java-workspace\springboot\spring-boot-mina)
+2019-04-15 09:02:40,363 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-04-15 09:02:43,945 INFO (StartupInfoLogger.java:57)- Started DemoApplication in 3.769 seconds (JVM running for 4.644)
+2019-04-15 09:03:15,674 INFO (StartupInfoLogger.java:48)- Starting DemoApplication on YuHai with PID 8968 (E:\workbench\java-workspace\springboot\spring-boot-mina\target\classes started by Admin in E:\workbench\java-workspace\springboot\spring-boot-mina)
+2019-04-15 09:03:15,676 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-04-15 09:03:20,563 INFO (StartupInfoLogger.java:57)- Started DemoApplication in 5.127 seconds (JVM running for 6.359)
+2019-04-15 09:08:25,572 INFO (StartupInfoLogger.java:48)- Starting DemoApplication on YuHai with PID 1896 (E:\workbench\java-workspace\springboot\spring-boot-mina\target\classes started by Admin in E:\workbench\java-workspace\springboot\spring-boot-mina)
+2019-04-15 09:08:25,574 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-04-15 09:08:28,889 INFO (StartupInfoLogger.java:57)- Started DemoApplication in 3.504 seconds (JVM running for 4.376)
+2019-04-15 09:10:56,770 INFO (StartupInfoLogger.java:48)- Starting DemoApplication on YuHai with PID 7764 (E:\workbench\java-workspace\springboot\spring-boot-mina\target\classes started by Admin in E:\workbench\java-workspace\springboot\spring-boot-mina)
+2019-04-15 09:10:56,772 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-04-15 09:11:00,129 INFO (StartupInfoLogger.java:57)- Started DemoApplication in 3.55 seconds (JVM running for 4.412)
+2019-04-15 09:11:29,773 INFO (StartupInfoLogger.java:48)- Starting DemoApplication on YuHai with PID 2852 (E:\workbench\java-workspace\springboot\spring-boot-mina\target\classes started by Admin in E:\workbench\java-workspace\springboot\spring-boot-mina)
+2019-04-15 09:11:29,775 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-04-15 09:11:33,233 INFO (StartupInfoLogger.java:57)- Started DemoApplication in 3.647 seconds (JVM running for 4.584)
+2019-04-15 09:15:18,401 INFO (StartupInfoLogger.java:48)- Starting DemoApplication on YuHai with PID 1192 (E:\workbench\java-workspace\springboot\spring-boot-mina\target\classes started by Admin in E:\workbench\java-workspace\springboot\spring-boot-mina)
+2019-04-15 09:15:18,403 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-04-15 09:15:21,800 INFO (StartupInfoLogger.java:57)- Started DemoApplication in 3.673 seconds (JVM running for 4.589)
+2019-04-15 09:15:51,337 INFO (StartupInfoLogger.java:48)- Starting DemoApplication on YuHai with PID 8060 (E:\workbench\java-workspace\springboot\spring-boot-mina\target\classes started by Admin in E:\workbench\java-workspace\springboot\spring-boot-mina)
+2019-04-15 09:15:51,339 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-04-15 09:15:54,677 INFO (StartupInfoLogger.java:57)- Started DemoApplication in 3.535 seconds (JVM running for 4.617)
+2019-04-15 09:16:44,532 INFO (StartupInfoLogger.java:48)- Starting DemoApplication on YuHai with PID 7408 (E:\workbench\java-workspace\springboot\spring-boot-mina\target\classes started by Admin in E:\workbench\java-workspace\springboot\spring-boot-mina)
+2019-04-15 09:16:44,535 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-04-15 09:16:48,087 INFO (StartupInfoLogger.java:57)- Started DemoApplication in 3.776 seconds (JVM running for 4.758)
+2019-04-15 09:17:38,129 INFO (StartupInfoLogger.java:48)- Starting DemoApplication on YuHai with PID 9112 (E:\workbench\java-workspace\springboot\spring-boot-mina\target\classes started by Admin in E:\workbench\java-workspace\springboot\spring-boot-mina)
+2019-04-15 09:17:38,131 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-04-15 09:17:41,509 INFO (StartupInfoLogger.java:57)- Started DemoApplication in 3.571 seconds (JVM running for 4.471)
+2019-04-15 09:21:34,685 INFO (StartupInfoLogger.java:48)- Starting DemoApplication on YuHai with PID 8212 (E:\workbench\java-workspace\springboot\spring-boot-mina\target\classes started by Admin in E:\workbench\java-workspace\springboot\spring-boot-mina)
+2019-04-15 09:21:34,687 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-04-15 09:21:38,378 INFO (StartupInfoLogger.java:57)- Started DemoApplication in 3.884 seconds (JVM running for 4.761)
