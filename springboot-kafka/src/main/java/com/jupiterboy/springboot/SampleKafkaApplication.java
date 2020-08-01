@@ -16,21 +16,26 @@
 
 package com.jupiterboy.springboot;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import javax.annotation.PostConstruct;
+
 @SpringBootApplication
 public class SampleKafkaApplication {
 
+	@Autowired
+	private Producer producer;
+	@PostConstruct
+	public void init(){
+		for(int i=0;i<10;i++){
+			producer.send("afs"+i);
+		}
+	}
 	public static void main(String[] args) {
 		SpringApplication.run(SampleKafkaApplication.class, args);
 	}
-
-	@Bean
-	public ApplicationRunner runner(Producer producer) {
-		return (args) -> producer.send(new SampleMessage(1, "A simple test message"));
-	}
-
 }
