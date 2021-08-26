@@ -9,6 +9,7 @@
         <module name="springboot-jpa" />
         <module name="springboot-docker-jpa" />
         <module name="springboot-ehcache" />
+        <module name="springboot-sharding" />
         <module name="springboot-mongodb" />
         <module name="springboot-zookeeper" />
         <module name="springboot-commandLineRunner" />
@@ -24,9 +25,14 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring-boot-dubbe" target="1.8" />
+      <module name="spring-boot-dubbe-api" target="1.8" />
+      <module name="spring-boot-dubbe-consumer" target="1.8" />
+      <module name="spring-boot-dubbe-provider" target="1.8" />
       <module name="springboot-helloworld (1) (com.jupiterboy.springboot)" target="1.8" />
       <module name="springboot-helloworld (2)" target="1.8" />
       <module name="springboot-kafka" target="1.8" />
+      <module name="springboot-mail" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

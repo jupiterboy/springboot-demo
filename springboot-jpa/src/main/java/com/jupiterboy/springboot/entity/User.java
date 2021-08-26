@@ -1,5 +1,6 @@
 package com.jupiterboy.springboot.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Column;
@@ -9,6 +10,7 @@ import javax.persistence.Id;
 
 @Entity
 @GenericGenerator(name = "system-uuid", strategy = "org.hibernate.id.UUIDGenerator")
+@JsonIgnoreProperties(value = { "hibernateLazyInitializer", "handler" })
 public class User {
     @Id
     @GeneratedValue(generator = "system-uuid")

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/springboot-commandLineRunner/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-commandLineRunner/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-docker-jpa/src/main/java" charset="UTF-8" />
@@ -27,9 +27,12 @@
     <file url="file://$PROJECT_DIR$/springboot-profile/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-sharding/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-sharding/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-vertx/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-vertx/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-zookeeper/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-zookeeper/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
