@@ -7,32 +7,36 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-jpa" />
+        <module name="springboot-docker" />
+        <module name="springboot-sqlite" />
         <module name="springboot-docker-jpa" />
+        <module name="springboot-profile" />
         <module name="springboot-ehcache" />
         <module name="springboot-sharding" />
+        <module name="springboot-zmq" />
+        <module name="springboot-scheduler" />
         <module name="springboot-mongodb" />
+        <module name="springboot-jython" />
         <module name="springboot-zookeeper" />
+        <module name="springboot-kafka" />
+        <module name="springboot-memcache" />
+        <module name="springboot-mina" />
         <module name="springboot-commandLineRunner" />
         <module name="spring-boot-kafka" />
         <module name="springboot-helloworld" />
         <module name="springboot-redis" />
         <module name="springboot-pb" />
-        <module name="springboot-docker" />
-        <module name="springboot-profile" />
+        <module name="springboot-mail" />
+        <module name="spring-boot-dubbe-consumer" />
+        <module name="spring-boot-dubbe-api" />
         <module name="springboot-netty" />
-        <module name="springboot-mina" />
+        <module name="spring-boot-dubbe-provider" />
         <module name="springboot-vertx" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring-boot-dubbe" target="1.8" />
-      <module name="spring-boot-dubbe-api" target="1.8" />
-      <module name="spring-boot-dubbe-consumer" target="1.8" />
-      <module name="spring-boot-dubbe-provider" target="1.8" />
       <module name="springboot-helloworld (1) (com.jupiterboy.springboot)" target="1.8" />
       <module name="springboot-helloworld (2)" target="1.8" />
-      <module name="springboot-kafka" target="1.8" />
-      <module name="springboot-mail" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

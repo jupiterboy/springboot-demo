@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
@@ -11,13 +12,14 @@ import org.springframework.stereotype.Service;
 
 // reference https://www.cnblogs.com/fashflying/p/6908028.html
 @Service
-//@CacheConfig(cacheNames = "customer")
+@CacheConfig(cacheNames = "customer")
 public class CustomerService {
 	
 	private Map<String, Customer> maps = new HashMap<String, Customer>();
 	
-	@CachePut(value = "customer", key = "'customer' + #id" )
+	@Cacheable(value = "customer", key = "'customer' + #id" )
 	public Customer getCustomer(String id) {
+		System.out.println("---------------------getCustomer");
 		return maps.get(id);
 	}
 

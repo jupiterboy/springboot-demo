@@ -34,7 +34,7 @@ public class OneWebSocket {
     public void onOpen(Session session) {
         onlineCount.incrementAndGet(); // 在线数加1
         clients.put(session.getId(), session);
-        log.info("new client join in:{}，current clients:{}", session.getId(), onlineCount.get());
+        log.info("new client join in:{}, current clients:{}", session.getId(), onlineCount.get());
     }
 
     /**
@@ -44,7 +44,7 @@ public class OneWebSocket {
     public void onClose(Session session) {
         onlineCount.decrementAndGet(); // 在线数减1
         clients.remove(session.getId());
-        log.info("one client leave:{}，current clients:{}", session.getId(), onlineCount.get());
+        log.info("one client leave:{}, current clients:{}", session.getId(), onlineCount.get());
     }
 
     /**

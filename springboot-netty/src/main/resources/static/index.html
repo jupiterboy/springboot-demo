@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>My WebSocket</title>
+    <title>Sensor Data</title>
 </head>
 
 <body>
@@ -13,9 +13,9 @@
 
     //判断当前浏览器是否支持WebSocket, 主要此处要更换为自己的地址
     if ('WebSocket' in window) {
-        websocket = new WebSocket("ws://localhost:8080/data");
+        websocket = new WebSocket("ws://192.168.1.28:8080/data");
     } else {
-        alert('Not support websocket')
+        alert('Not support websocket');
     }
 
     //连接发生错误的回调方法
@@ -45,7 +45,8 @@
 
     //将消息显示在网页上
     function setMessageInnerHTML(innerHTML) {
-        document.getElementById('message').innerHTML += innerHTML + '<br/>';
+        document.getElementById('message').innerHTML = innerHTML + '<br/>' + document.getElementById('message').innerHTML;
+        // document.getElementById('message').innerHTML += innerHTML + '<br/>';
     }
 
     //关闭连接

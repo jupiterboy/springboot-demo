@@ -5,7 +5,7 @@
 
 	<groupId>ccom.jupiterboy.springboot</groupId>
 	<artifactId>springboot-netty</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>jar</packaging>
 
 	<name>springboot-netty</name>

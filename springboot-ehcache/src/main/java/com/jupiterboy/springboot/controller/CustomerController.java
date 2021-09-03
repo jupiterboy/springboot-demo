@@ -30,7 +30,8 @@ public class CustomerController {
 	
 	@GetMapping("/customer/get/{id}")
     public Customer getCustomer(@PathVariable String id) {
-        return customerService.getCustomer(id);
+
+		return customerService.getCustomer(id);
     }
     
     @RequestMapping("/customer/delete/{id}")

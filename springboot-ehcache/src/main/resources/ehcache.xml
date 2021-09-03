@@ -4,4 +4,8 @@
 		   maxEntriesLocalHeap="200"
 		   timeToLiveSeconds="600">
 	</cache>
+	<cache name="customers"
+		   maxEntriesLocalHeap="200"
+		   timeToLiveSeconds="600">
+	</cache>
 </ehcache>

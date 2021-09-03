@@ -1,5 +1,6 @@
 package com.jupiterboy.springboot;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.*;
@@ -44,10 +45,9 @@ public class NettyApplication implements CommandLineRunner {
 
 	public static Map<String, Queue<Object>> queues = new HashMap<String, Queue<Object>>();
 	static{
-		queues.put("123DADEF5B47", new ArrayBlockingQueue<Object>(10000));
-		queues.put("123DADEFA0C3", new ArrayBlockingQueue<Object>(10000));
-		queues.put("164595ED0CA2", new ArrayBlockingQueue<Object>(10000));
-		queues.put("0F69583347E3", new ArrayBlockingQueue<Object>(10000));
+		for(String key : maps.keySet()){
+			queues.put(key, new ArrayBlockingQueue<Object>(10000));
+		}
 	}
 
 	@Bean
@@ -112,6 +112,7 @@ public class NettyApplication implements CommandLineRunner {
 
 	private static class SensorData {
 		public String clientId;
+		@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
 		public final Date timestamp = new Date();
 	}
 
@@ -120,7 +121,7 @@ public class NettyApplication implements CommandLineRunner {
 
 		@Override
 		public String toString() {
-			return "SensorData {" +
+			return "OxygenData {" +
 					"oxygen=" + oxygen +
 					", clientId=" + clientId +
 					", timestamp=" + timestamp +
