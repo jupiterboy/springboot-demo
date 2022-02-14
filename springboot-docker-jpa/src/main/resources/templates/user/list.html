@@ -22,13 +22,13 @@
         </tr>
         </thead>
         <tbody>
-        <tr  th:each="user : ${users}">
-            <th scope="row" th:text="${user.id}">1</th>
-            <td th:text="${user.userName}">neo</td>
-            <td th:text="${user.password}">Otto</td>
-            <td th:text="${user.age}">6</td>
-            <td><a th:href="@{/toEdit(id=${user.id})}">edit</a></td>
-            <td><a th:href="@{/delete(id=${user.id})}">delete</a></td>
+        <tr  th:each="myUser : ${users}">
+            <th scope="row" th:text="${myUser.id}">1</th>
+            <td th:text="${myUser.userName}">neo</td>
+            <td th:text="${myUser.password}">Otto</td>
+            <td th:text="${myUser.age}">6</td>
+            <td><a th:href="@{/toEdit(id=${myUser.id})}">edit</a></td>
+            <td><a th:href="@{/delete(id=${myUser.id})}">delete</a></td>
         </tr>
         </tbody>
     </table>

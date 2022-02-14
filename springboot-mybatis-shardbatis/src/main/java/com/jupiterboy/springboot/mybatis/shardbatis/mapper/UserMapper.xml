@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jupiterboy.springboot.mybatis.shardbatis.mapper.UserMapper">
+    <select id="findAll" resultType="com.jupiterboy.springboot.mybatis.shardbatis.entity.MyUser">
+        SELECT * FROM tb_user
+    </select>
+    
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id">
+        <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.String">
+            select replace(uuid(), '-', '') as id from dual
+        </selectKey>
+        INSERT INTO tb_user(id, username, password) VALUES(#{id}, #{username}, #{password})
+    </insert>
+
+    <update id="createTable" parameterType="java.lang.String">
+        CREATE TABLE ${tableName}  (
+        `id` varchar(255) NOT NULL,
+        `username` varchar(255) DEFAULT NULL,
+        `password` varchar(255) DEFAULT NULL,
+        PRIMARY KEY (`id`) USING BTREE
+        ) ENGINE = InnoDB AUTO_INCREMENT = 20 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+    </update>
+
+</mapper>

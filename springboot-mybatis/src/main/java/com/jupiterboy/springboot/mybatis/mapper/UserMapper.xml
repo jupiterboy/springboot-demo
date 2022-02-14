@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jupiterboy.springboot.mybatis.mapper.UserMapper">
+    <select id="findAll" resultType="com.jupiterboy.springboot.mybatis.entity.User">
+        SELECT * FROM tb_user
+    </select>
+    
+    <insert id="insertUser" parameterType="com.jupiterboy.springboot.mybatis.entity.User"
+            useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO tb_user(username, password) VALUES(#{username}, #{password})
+    </insert>
+
+</mapper>

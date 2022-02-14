@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>user</title>
+    <title>myUser</title>
     <link rel="stylesheet" th:href="@{/css/bootstrap.css}"></link>
 </head>
 <body class="container">
@@ -10,7 +10,7 @@
 <h1>修改用户</h1>
 <br/><br/>
 <div class="with:80%">
-    <form class="form-horizontal"   th:action="@{/edit}" th:object="${user}"  method="post">
+    <form class="form-horizontal"   th:action="@{/edit}" th:object="${myUser}"  method="post">
         <input type="hidden" name="id" th:value="*{id}" />
         <div class="form-group">
             <label for="userName" class="col-sm-2 control-label">userName</label>

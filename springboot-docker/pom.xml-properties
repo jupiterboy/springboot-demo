@@ -1,3 +1,0 @@
-<properties>
-    <docker.image.prefix>springboot</docker.image.prefix>
-</properties>
