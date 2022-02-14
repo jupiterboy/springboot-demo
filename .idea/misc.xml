@@ -4,15 +4,35 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
+  <component name="MavenCompilerTasksManager">
+    <option name="beforeCompileTasks">
+      <set>
+        <MavenCompilerTask>
+          <option name="goal" value="com.spotify:docker-maven-plugin:1.0.0:removeImage" />
+          <option name="projectPath" value="$PROJECT_DIR$/springboot-docker/pom.xml" />
+        </MavenCompilerTask>
+      </set>
+    </option>
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-helloworld/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/springboot-cache-ehcache/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-cache-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-event-kafka/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-jython/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
   </component>
 </project>

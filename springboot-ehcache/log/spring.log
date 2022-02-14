@@ -16,8 +16,8 @@
 2018-03-08 09:31:14.114  INFO 6920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'remoteIpFilter' to: [/*]
 2018-03-08 09:31:14.114  INFO 6920 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
 2018-03-08 09:31:14.510  INFO 6920 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@16e7dcfd: startup date [Thu Mar 08 09:31:11 CST 2018]; root of context hierarchy
-2018-03-08 09:31:14.600  INFO 6920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 09:31:14.602  INFO 6920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.jupiterboy.springboot.domain.User com.jupiterboy.springboot.controller.HelloWorldController.getUser()
+2018-03-08 09:31:14.600  INFO 6920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 09:31:14.602  INFO 6920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.jupiterboy.springboot.domain.User HelloWorldController.getUser()
 2018-03-08 09:31:14.608  INFO 6920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 09:31:14.609  INFO 6920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 09:31:14.651  INFO 6920 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -47,8 +47,8 @@
 2018-03-08 09:32:30.922  INFO 9764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'remoteIpFilter' to: [/*]
 2018-03-08 09:32:30.923  INFO 9764 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
 2018-03-08 09:32:31.281  INFO 9764 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ee955a8: startup date [Thu Mar 08 09:32:29 CST 2018]; root of context hierarchy
-2018-03-08 09:32:31.382  INFO 9764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 09:32:31.384  INFO 9764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.jupiterboy.springboot.domain.User com.jupiterboy.springboot.controller.HelloWorldController.getUser()
+2018-03-08 09:32:31.382  INFO 9764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 09:32:31.384  INFO 9764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.jupiterboy.springboot.domain.User HelloWorldController.getUser()
 2018-03-08 09:32:31.392  INFO 9764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 09:32:31.393  INFO 9764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 09:32:31.432  INFO 9764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -78,8 +78,8 @@
 2018-03-08 09:33:58.833  INFO 9684 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'remoteIpFilter' to: [/*]
 2018-03-08 09:33:58.833  INFO 9684 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
 2018-03-08 09:33:59.214  INFO 9684 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3901d134: startup date [Thu Mar 08 09:33:56 CST 2018]; root of context hierarchy
-2018-03-08 09:33:59.292  INFO 9684 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 09:33:59.294  INFO 9684 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.jupiterboy.springboot.domain.User com.jupiterboy.springboot.controller.HelloWorldController.getUser()
+2018-03-08 09:33:59.292  INFO 9684 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 09:33:59.294  INFO 9684 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.jupiterboy.springboot.domain.User HelloWorldController.getUser()
 2018-03-08 09:33:59.301  INFO 9684 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 09:33:59.302  INFO 9684 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 09:33:59.346  INFO 9684 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -109,8 +109,8 @@
 2018-03-08 09:34:56.671  INFO 8744 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'remoteIpFilter' to: [/*]
 2018-03-08 09:34:56.672  INFO 8744 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
 2018-03-08 09:34:57.066  INFO 8744 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3901d134: startup date [Thu Mar 08 09:34:54 CST 2018]; root of context hierarchy
-2018-03-08 09:34:57.154  INFO 8744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 09:34:57.158  INFO 8744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.jupiterboy.springboot.domain.User com.jupiterboy.springboot.controller.HelloWorldController.getUser()
+2018-03-08 09:34:57.154  INFO 8744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 09:34:57.158  INFO 8744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.jupiterboy.springboot.domain.User HelloWorldController.getUser()
 2018-03-08 09:34:57.166  INFO 8744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 09:34:57.167  INFO 8744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 09:34:57.206  INFO 8744 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -140,8 +140,8 @@
 2018-03-08 09:35:26.830  INFO 8940 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'remoteIpFilter' to: [/*]
 2018-03-08 09:35:26.831  INFO 8940 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
 2018-03-08 09:35:27.190  INFO 8940 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3901d134: startup date [Thu Mar 08 09:35:24 CST 2018]; root of context hierarchy
-2018-03-08 09:35:27.272  INFO 8940 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 09:35:27.273  INFO 8940 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.jupiterboy.springboot.domain.User com.jupiterboy.springboot.controller.HelloWorldController.getUser()
+2018-03-08 09:35:27.272  INFO 8940 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 09:35:27.273  INFO 8940 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.jupiterboy.springboot.domain.User HelloWorldController.getUser()
 2018-03-08 09:35:27.280  INFO 8940 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 09:35:27.281  INFO 8940 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 09:35:27.323  INFO 8940 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -168,9 +168,9 @@
 2018-03-08 09:39:18.235  INFO 8816 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'remoteIpFilter' to: [/*]
 2018-03-08 09:39:18.236  INFO 8816 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
 2018-03-08 09:39:18.642  INFO 8816 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b07a0d6: startup date [Thu Mar 08 09:39:16 CST 2018]; root of context hierarchy
-2018-03-08 09:39:18.732  INFO 8816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 09:39:18.734  INFO 8816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.jupiterboy.springboot.domain.User com.jupiterboy.springboot.controller.HelloWorldController.getUser()
-2018-03-08 09:39:18.734  INFO 8816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.domain.User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-08 09:39:18.732  INFO 8816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 09:39:18.734  INFO 8816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.jupiterboy.springboot.domain.User HelloWorldController.getUser()
+2018-03-08 09:39:18.734  INFO 8816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public com.jupiterboy.springboot.domain.User HelloWorldController.myUser()
 2018-03-08 09:39:18.739  INFO 8816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 09:39:18.740  INFO 8816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 09:39:18.783  INFO 8816 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -200,9 +200,9 @@
 2018-03-08 09:40:12.872  INFO 7616 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'remoteIpFilter' to: [/*]
 2018-03-08 09:40:12.872  INFO 7616 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
 2018-03-08 09:40:13.234  INFO 7616 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b07a0d6: startup date [Thu Mar 08 09:40:10 CST 2018]; root of context hierarchy
-2018-03-08 09:40:13.329  INFO 7616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 09:40:13.331  INFO 7616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.domain.User com.jupiterboy.springboot.controller.HelloWorldController.user()
-2018-03-08 09:40:13.331  INFO 7616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.jupiterboy.springboot.domain.User com.jupiterboy.springboot.controller.HelloWorldController.getUser()
+2018-03-08 09:40:13.329  INFO 7616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 09:40:13.331  INFO 7616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public com.jupiterboy.springboot.domain.User HelloWorldController.myUser()
+2018-03-08 09:40:13.331  INFO 7616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.jupiterboy.springboot.domain.User HelloWorldController.getUser()
 2018-03-08 09:40:13.341  INFO 7616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 09:40:13.342  INFO 7616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 09:40:13.386  INFO 7616 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -232,7 +232,7 @@
 2018-03-08 10:01:24.562  INFO 8928 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
 2018-03-08 10:01:25.774 ERROR 8928 --- [main] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
 
-java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+java.sql.SQLException: Access denied for myUser 'root'@'localhost' (using password: YES)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.43.jar:5.1.43]
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.43.jar:5.1.43]
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.43.jar:5.1.43]
@@ -323,11 +323,11 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
-	at com.jupiterboy.springboot.HelloworldApplication.main(HelloworldApplication.java:10) [classes/:na]
+	at HelloworldApplication.main(HelloworldApplication.java:10) [classes/:na]
 
 2018-03-08 10:01:25.784  WARN 8928 --- [main] o.s.b.a.orm.jpa.DatabaseLookup           : Unable to determine jdbc url from datasource
 
-org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: Access denied for myUser 'root'@'localhost' (using password: YES)
 	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:339) ~[spring-jdbc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
 	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366) ~[spring-jdbc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
 	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72) ~[spring-boot-autoconfigure-1.5.6.RELEASE.jar:1.5.6.RELEASE]
@@ -389,12 +389,12 @@ org.springframework.jdbc.support.MetaDataAccessException: Could not get Connecti
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
-	at com.jupiterboy.springboot.HelloworldApplication.main(HelloworldApplication.java:10) [classes/:na]
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at HelloworldApplication.main(HelloworldApplication.java:10) [classes/:na]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: Access denied for myUser 'root'@'localhost' (using password: YES)
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
 	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326) ~[spring-jdbc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
 	... 61 common frames omitted
-Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+Caused by: java.sql.SQLException: Access denied for myUser 'root'@'localhost' (using password: YES)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.43.jar:5.1.43]
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.43.jar:5.1.43]
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.43.jar:5.1.43]
@@ -428,7 +428,7 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 
 2018-03-08 10:01:25.836 ERROR 8928 --- [main] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
 
-java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+java.sql.SQLException: Access denied for myUser 'root'@'localhost' (using password: YES)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.43.jar:5.1.43]
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.43.jar:5.1.43]
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.43.jar:5.1.43]
@@ -495,7 +495,7 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
-	at com.jupiterboy.springboot.HelloworldApplication.main(HelloworldApplication.java:10) [classes/:na]
+	at HelloworldApplication.main(HelloworldApplication.java:10) [classes/:na]
 
 2018-03-08 10:01:25.919  INFO 8928 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
 2018-03-08 10:01:25.958  INFO 8928 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
@@ -507,7 +507,7 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 2018-03-08 10:01:26.287  INFO 8928 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
 2018-03-08 10:01:26.551 ERROR 8928 --- [main] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
 
-java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+java.sql.SQLException: Access denied for myUser 'root'@'localhost' (using password: YES)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.43.jar:5.1.43]
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.43.jar:5.1.43]
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.43.jar:5.1.43]
@@ -572,15 +572,15 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
-	at com.jupiterboy.springboot.HelloworldApplication.main(HelloworldApplication.java:10) [classes/:na]
+	at HelloworldApplication.main(HelloworldApplication.java:10) [classes/:na]
 
-2018-03-08 10:01:26.552  WARN 8928 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Access denied for user 'root'@'localhost' (using password: YES)
+2018-03-08 10:01:26.552  WARN 8928 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Access denied for myUser 'root'@'localhost' (using password: YES)
 2018-03-08 10:01:26.594  INFO 8928 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 2018-03-08 10:01:26.628  INFO 8928 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
 2018-03-08 10:01:27.025  INFO 8928 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-08 10:01:27.040 ERROR 8928 --- [main] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
 
-java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+java.sql.SQLException: Access denied for myUser 'root'@'localhost' (using password: YES)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.43.jar:5.1.43]
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.43.jar:5.1.43]
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.43.jar:5.1.43]
@@ -638,7 +638,7 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
-	at com.jupiterboy.springboot.HelloworldApplication.main(HelloworldApplication.java:10) [classes/:na]
+	at HelloworldApplication.main(HelloworldApplication.java:10) [classes/:na]
 
 2018-03-08 10:01:27.043  WARN 8928 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
 2018-03-08 10:01:27.047  INFO 8928 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
@@ -664,7 +664,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
-	at com.jupiterboy.springboot.HelloworldApplication.main(HelloworldApplication.java:10) [classes/:na]
+	at HelloworldApplication.main(HelloworldApplication.java:10) [classes/:na]
 Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
@@ -684,7 +684,7 @@ Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Unable to op
 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
 	... 22 common frames omitted
-Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+Caused by: java.sql.SQLException: Access denied for myUser 'root'@'localhost' (using password: YES)
 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.43.jar:5.1.43]
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.43.jar:5.1.43]
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.43.jar:5.1.43]
@@ -745,8 +745,8 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2018-03-08 10:02:58.708  INFO 6872 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-08 10:02:58.801  INFO 6872 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-08 10:02:59.414  INFO 6872 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b0b186: startup date [Thu Mar 08 10:02:54 CST 2018]; root of context hierarchy
-2018-03-08 10:02:59.527  INFO 6872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 10:02:59.528  INFO 6872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$Student com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-08 10:02:59.527  INFO 6872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 10:02:59.528  INFO 6872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public HelloWorldController$Student HelloWorldController.myUser()
 2018-03-08 10:02:59.531  INFO 6872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 10:02:59.532  INFO 6872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 10:02:59.583  INFO 6872 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -758,9 +758,9 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2018-03-08 10:03:09.394  INFO 6872 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2018-03-08 10:03:09.394  INFO 6872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2018-03-08 10:03:09.436  INFO 6872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
-2018-03-08 10:03:09.677 ERROR 6872 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: No converter found for return value of type: class com.jupiterboy.springboot.controller.HelloWorldController$Student] with root cause
+2018-03-08 10:03:09.677 ERROR 6872 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: No converter found for return value of type: class HelloWorldController$Student] with root cause
 
-java.lang.IllegalArgumentException: No converter found for return value of type: class com.jupiterboy.springboot.controller.HelloWorldController$Student
+java.lang.IllegalArgumentException: No converter found for return value of type: class HelloWorldController$Student
 	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:187) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:174) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
 	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:81) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
@@ -851,8 +851,8 @@ java.lang.IllegalArgumentException: No converter found for return value of type:
 2018-03-08 10:03:36.285  INFO 1736 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-08 10:03:36.337  INFO 1736 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-08 10:03:36.704  INFO 1736 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70b0b186: startup date [Thu Mar 08 10:03:32 CST 2018]; root of context hierarchy
-2018-03-08 10:03:36.818  INFO 1736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 10:03:36.819  INFO 1736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$Student com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-08 10:03:36.818  INFO 1736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 10:03:36.819  INFO 1736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public HelloWorldController$Student HelloWorldController.myUser()
 2018-03-08 10:03:36.825  INFO 1736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 10:03:36.825  INFO 1736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 10:03:36.867  INFO 1736 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -878,12 +878,12 @@ java.lang.IllegalArgumentException: No converter found for return value of type:
 2018-03-08 10:07:43.589  INFO 10116 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 2018-03-08 10:07:44.647  INFO 10116 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.jupiterboy.springboot.domain.User (class must be instantiated by Interceptor)
 2018-03-08 10:07:45.013  INFO 10116 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
-2018-03-08 10:07:45.029  INFO 10116 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: user
-2018-03-08 10:07:45.030  INFO 10116 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: user
+2018-03-08 10:07:45.029  INFO 10116 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: myUser
+2018-03-08 10:07:45.030  INFO 10116 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: myUser
 2018-03-08 10:07:46.454  INFO 10116 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-08 10:07:47.595  INFO 10116 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@484970b0: startup date [Thu Mar 08 10:07:40 CST 2018]; root of context hierarchy
-2018-03-08 10:07:47.696  INFO 10116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 10:07:47.698  INFO 10116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$Student com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-08 10:07:47.696  INFO 10116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 10:07:47.698  INFO 10116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public HelloWorldController$Student HelloWorldController.myUser()
 2018-03-08 10:07:47.701  INFO 10116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 10:07:47.702  INFO 10116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 10:07:47.750  INFO 10116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -908,8 +908,8 @@ java.lang.IllegalArgumentException: No converter found for return value of type:
 2018-03-08 10:08:18.952  INFO 7728 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-08 10:08:19.059  INFO 7728 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-08 10:08:20.076  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@484970b0: startup date [Thu Mar 08 10:08:15 CST 2018]; root of context hierarchy
-2018-03-08 10:08:20.181  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 10:08:20.183  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$Student com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-08 10:08:20.181  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 10:08:20.183  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public HelloWorldController$Student HelloWorldController.myUser()
 2018-03-08 10:08:20.185  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 10:08:20.186  INFO 7728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 10:08:20.245  INFO 7728 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -935,8 +935,8 @@ java.lang.IllegalArgumentException: No converter found for return value of type:
 2018-03-08 10:09:13.357  INFO 9728 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-08 10:09:13.469  INFO 9728 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-08 10:09:14.510  INFO 9728 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@484970b0: startup date [Thu Mar 08 10:09:09 CST 2018]; root of context hierarchy
-2018-03-08 10:09:14.619  INFO 9728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 10:09:14.620  INFO 9728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$Student com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-08 10:09:14.619  INFO 9728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 10:09:14.620  INFO 9728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public HelloWorldController$Student HelloWorldController.myUser()
 2018-03-08 10:09:14.623  INFO 9728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 10:09:14.624  INFO 9728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 10:09:14.669  INFO 9728 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -961,8 +961,8 @@ java.lang.IllegalArgumentException: No converter found for return value of type:
 2018-03-08 10:10:39.726  INFO 9636 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-08 10:10:39.841  INFO 9636 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-08 10:10:40.846  INFO 9636 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@484970b0: startup date [Thu Mar 08 10:10:36 CST 2018]; root of context hierarchy
-2018-03-08 10:10:40.956  INFO 9636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 10:10:40.957  INFO 9636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$Student com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-08 10:10:40.956  INFO 9636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 10:10:40.957  INFO 9636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public HelloWorldController$Student HelloWorldController.myUser()
 2018-03-08 10:10:40.961  INFO 9636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 10:10:40.962  INFO 9636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 10:10:41.017  INFO 9636 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -987,8 +987,8 @@ java.lang.IllegalArgumentException: No converter found for return value of type:
 2018-03-08 10:13:40.805  INFO 5328 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-08 10:13:40.911  INFO 5328 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-08 10:13:41.906  INFO 5328 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@484970b0: startup date [Thu Mar 08 10:13:37 CST 2018]; root of context hierarchy
-2018-03-08 10:13:42.023  INFO 5328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 10:13:42.024  INFO 5328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$Student com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-08 10:13:42.023  INFO 5328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 10:13:42.024  INFO 5328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public HelloWorldController$Student HelloWorldController.myUser()
 2018-03-08 10:13:42.027  INFO 5328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 10:13:42.028  INFO 5328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 10:13:42.079  INFO 5328 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1013,8 +1013,8 @@ java.lang.IllegalArgumentException: No converter found for return value of type:
 2018-03-08 10:14:23.035  INFO 10208 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-08 10:14:23.141  INFO 10208 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-08 10:14:24.216  INFO 10208 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@484970b0: startup date [Thu Mar 08 10:14:19 CST 2018]; root of context hierarchy
-2018-03-08 10:14:24.419  INFO 10208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 10:14:24.421  INFO 10208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$Student com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-08 10:14:24.419  INFO 10208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 10:14:24.421  INFO 10208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public HelloWorldController$Student HelloWorldController.myUser()
 2018-03-08 10:14:24.423  INFO 10208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 10:14:24.424  INFO 10208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 10:14:24.475  INFO 10208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1039,8 +1039,8 @@ java.lang.IllegalArgumentException: No converter found for return value of type:
 2018-03-08 10:14:38.247  INFO 9240 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-08 10:14:38.360  INFO 9240 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-08 10:14:39.404  INFO 9240 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@32910148: startup date [Thu Mar 08 10:14:34 CST 2018]; root of context hierarchy
-2018-03-08 10:14:39.499  INFO 9240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 10:14:39.500  INFO 9240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$Student com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-08 10:14:39.499  INFO 9240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 10:14:39.500  INFO 9240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public HelloWorldController$Student HelloWorldController.myUser()
 2018-03-08 10:14:39.503  INFO 9240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 10:14:39.504  INFO 9240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 10:14:39.547  INFO 9240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1065,8 +1065,8 @@ java.lang.IllegalArgumentException: No converter found for return value of type:
 2018-03-08 10:16:39.531  INFO 9392 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-08 10:16:39.676  INFO 9392 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-08 10:16:40.698  INFO 9392 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@32910148: startup date [Thu Mar 08 10:16:35 CST 2018]; root of context hierarchy
-2018-03-08 10:16:40.801  INFO 9392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-08 10:16:40.802  INFO 9392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$Student com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-08 10:16:40.801  INFO 9392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-08 10:16:40.802  INFO 9392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student]}" onto public HelloWorldController$Student HelloWorldController.myUser()
 2018-03-08 10:16:40.806  INFO 9392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-08 10:16:40.807  INFO 9392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-08 10:16:40.858  INFO 9392 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1103,8 +1103,8 @@ java.lang.IllegalArgumentException: No converter found for return value of type:
 2018-03-13 11:03:48.364  INFO 10088 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-13 11:03:48.443  INFO 10088 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-13 11:03:49.213  INFO 10088 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23282c25: startup date [Tue Mar 13 11:03:39 CST 2018]; root of context hierarchy
-2018-03-13 11:03:49.398  INFO 10088 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-13 11:03:49.399  INFO 10088 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-13 11:03:49.398  INFO 10088 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-13 11:03:49.399  INFO 10088 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-03-13 11:03:49.403  INFO 10088 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-13 11:03:49.404  INFO 10088 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-13 11:03:49.468  INFO 10088 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1137,7 +1137,7 @@ java.net.BindException: Address already in use: bind
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
-	at com.jupiterboy.springboot.HelloworldApplication.main(HelloworldApplication.java:10) [classes/:na]
+	at HelloworldApplication.main(HelloworldApplication.java:10) [classes/:na]
 
 2018-03-13 11:03:50.803 ERROR 10088 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
 
@@ -1155,7 +1155,7 @@ org.apache.catalina.LifecycleException: Failed to start component [Connector[HTT
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.6.RELEASE.jar:1.5.6.RELEASE]
-	at com.jupiterboy.springboot.HelloworldApplication.main(HelloworldApplication.java:10) [classes/:na]
+	at HelloworldApplication.main(HelloworldApplication.java:10) [classes/:na]
 Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
 	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.16.jar:8.5.16]
@@ -1221,8 +1221,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-03-13 11:04:06.792  INFO 5612 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-13 11:04:06.852  INFO 5612 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-13 11:04:07.317  INFO 5612 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23282c25: startup date [Tue Mar 13 11:04:02 CST 2018]; root of context hierarchy
-2018-03-13 11:04:07.434  INFO 5612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-13 11:04:07.436  INFO 5612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-13 11:04:07.434  INFO 5612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-13 11:04:07.436  INFO 5612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-03-13 11:04:07.440  INFO 5612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-13 11:04:07.440  INFO 5612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-13 11:04:07.486  INFO 5612 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1262,8 +1262,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-03-13 11:05:45.605  INFO 9544 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-13 11:05:45.661  INFO 9544 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-13 11:05:46.157  INFO 9544 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23282c25: startup date [Tue Mar 13 11:05:41 CST 2018]; root of context hierarchy
-2018-03-13 11:05:46.261  INFO 9544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-13 11:05:46.262  INFO 9544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-13 11:05:46.261  INFO 9544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-13 11:05:46.262  INFO 9544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-03-13 11:05:46.266  INFO 9544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-13 11:05:46.267  INFO 9544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-13 11:05:46.313  INFO 9544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1303,8 +1303,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-03-13 11:06:34.506  INFO 10720 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-13 11:06:34.529  INFO 10720 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-13 11:06:34.946  INFO 10720 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60704c: startup date [Tue Mar 13 11:06:32 CST 2018]; root of context hierarchy
-2018-03-13 11:06:35.002  INFO 10720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-13 11:06:35.003  INFO 10720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-13 11:06:35.002  INFO 10720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-13 11:06:35.003  INFO 10720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-03-13 11:06:35.007  INFO 10720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-13 11:06:35.008  INFO 10720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-13 11:06:35.041  INFO 10720 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1349,8 +1349,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-03-13 11:10:25.369  INFO 8500 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-13 11:10:25.397  INFO 8500 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-13 11:10:25.901  INFO 8500 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60704c: startup date [Tue Mar 13 11:10:22 CST 2018]; root of context hierarchy
-2018-03-13 11:10:25.965  INFO 8500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-13 11:10:25.966  INFO 8500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-13 11:10:25.965  INFO 8500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-13 11:10:25.966  INFO 8500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-03-13 11:10:25.971  INFO 8500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-13 11:10:25.972  INFO 8500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-13 11:10:26.008  INFO 8500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1395,8 +1395,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-03-13 11:35:14.023  INFO 8512 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-13 11:35:14.046  INFO 8512 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-13 11:35:14.480  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77ff3a54: startup date [Tue Mar 13 11:35:11 CST 2018]; root of context hierarchy
-2018-03-13 11:35:14.555  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-13 11:35:14.556  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-13 11:35:14.555  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-13 11:35:14.556  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-03-13 11:35:14.568  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-13 11:35:14.568  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-13 11:35:14.608  INFO 8512 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1437,8 +1437,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-03-13 11:35:31.619  INFO 8512 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-13 11:35:31.620  INFO 8512 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-13 11:35:31.702  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3737865a: startup date [Tue Mar 13 11:35:30 CST 2018]; root of context hierarchy
-2018-03-13 11:35:31.714  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-13 11:35:31.715  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-13 11:35:31.714  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-13 11:35:31.715  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-03-13 11:35:31.716  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-13 11:35:31.717  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-13 11:35:31.724  INFO 8512 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1479,8 +1479,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-03-13 11:35:45.218  INFO 8512 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-13 11:35:45.219  INFO 8512 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-13 11:35:45.290  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53e0ebf9: startup date [Tue Mar 13 11:35:44 CST 2018]; root of context hierarchy
-2018-03-13 11:35:45.300  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-13 11:35:45.300  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-13 11:35:45.300  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-13 11:35:45.300  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-03-13 11:35:45.302  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-13 11:35:45.302  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-13 11:35:45.310  INFO 8512 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1521,8 +1521,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-03-13 11:36:02.811  INFO 8512 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-13 11:36:02.812  INFO 8512 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-13 11:36:02.889  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4e6db632: startup date [Tue Mar 13 11:36:02 CST 2018]; root of context hierarchy
-2018-03-13 11:36:02.901  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-13 11:36:02.901  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-13 11:36:02.901  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-13 11:36:02.901  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-03-13 11:36:02.903  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-13 11:36:02.904  INFO 8512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-13 11:36:02.912  INFO 8512 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1565,8 +1565,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-03-13 11:36:58.584  INFO 10516 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-13 11:36:58.608  INFO 10516 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-13 11:36:59.025  INFO 10516 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3d41d771: startup date [Tue Mar 13 11:36:55 CST 2018]; root of context hierarchy
-2018-03-13 11:36:59.081  INFO 10516 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-13 11:36:59.082  INFO 10516 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-13 11:36:59.081  INFO 10516 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-13 11:36:59.082  INFO 10516 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-03-13 11:36:59.087  INFO 10516 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-13 11:36:59.087  INFO 10516 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-13 11:36:59.118  INFO 10516 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1607,8 +1607,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-03-13 11:37:13.147  INFO 10516 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-13 11:37:13.148  INFO 10516 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-13 11:37:13.235  INFO 10516 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37bd132d: startup date [Tue Mar 13 11:37:12 CST 2018]; root of context hierarchy
-2018-03-13 11:37:13.247  INFO 10516 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-13 11:37:13.247  INFO 10516 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-13 11:37:13.247  INFO 10516 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-13 11:37:13.247  INFO 10516 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-03-13 11:37:13.249  INFO 10516 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-13 11:37:13.249  INFO 10516 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-13 11:37:13.257  INFO 10516 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1654,8 +1654,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-03-13 11:37:31.992  INFO 9924 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-13 11:37:32.017  INFO 9924 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-13 11:37:32.464  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2447e8d8: startup date [Tue Mar 13 11:37:29 CST 2018]; root of context hierarchy
-2018-03-13 11:37:32.525  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-13 11:37:32.526  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-13 11:37:32.525  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-13 11:37:32.526  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-03-13 11:37:32.529  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-13 11:37:32.530  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-13 11:37:32.563  INFO 9924 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1696,8 +1696,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-03-13 11:37:43.494  INFO 9924 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-13 11:37:43.495  INFO 9924 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-13 11:37:43.572  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a3328f8: startup date [Tue Mar 13 11:37:42 CST 2018]; root of context hierarchy
-2018-03-13 11:37:43.587  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-13 11:37:43.588  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-13 11:37:43.587  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-13 11:37:43.588  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-03-13 11:37:43.590  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-13 11:37:43.590  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-13 11:37:43.598  INFO 9924 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1738,8 +1738,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-03-13 11:39:28.390  INFO 9924 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-13 11:39:28.392  INFO 9924 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-13 11:39:28.467  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@40db46f7: startup date [Tue Mar 13 11:39:27 CST 2018]; root of context hierarchy
-2018-03-13 11:39:28.480  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-13 11:39:28.480  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-13 11:39:28.480  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-13 11:39:28.480  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-03-13 11:39:28.482  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-13 11:39:28.482  INFO 9924 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-13 11:39:28.491  INFO 9924 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1782,8 +1782,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-03-13 11:39:56.234  INFO 7248 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-13 11:39:56.257  INFO 7248 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-13 11:39:56.729  INFO 7248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c0172f0: startup date [Tue Mar 13 11:39:53 CST 2018]; root of context hierarchy
-2018-03-13 11:39:56.787  INFO 7248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-13 11:39:56.788  INFO 7248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-13 11:39:56.787  INFO 7248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-13 11:39:56.788  INFO 7248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-03-13 11:39:56.793  INFO 7248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-13 11:39:56.793  INFO 7248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-13 11:39:56.822  INFO 7248 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1824,8 +1824,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-03-13 11:40:07.829  INFO 7248 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-03-13 11:40:07.830  INFO 7248 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-03-13 11:40:07.910  INFO 7248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4121eca4: startup date [Tue Mar 13 11:40:07 CST 2018]; root of context hierarchy
-2018-03-13 11:40:07.921  INFO 7248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-03-13 11:40:07.922  INFO 7248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-03-13 11:40:07.921  INFO 7248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-03-13 11:40:07.922  INFO 7248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-03-13 11:40:07.924  INFO 7248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-03-13 11:40:07.924  INFO 7248 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-03-13 11:40:07.934  INFO 7248 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1871,8 +1871,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-04-18 14:03:30.246  INFO 8416 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-04-18 14:03:30.297  INFO 8416 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-04-18 14:03:30.886  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a5f59f6: startup date [Wed Apr 18 14:03:23 CST 2018]; root of context hierarchy
-2018-04-18 14:03:31.030  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-04-18 14:03:31.031  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-04-18 14:03:31.030  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-04-18 14:03:31.031  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-04-18 14:03:31.035  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-04-18 14:03:31.036  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-04-18 14:03:31.118  INFO 8416 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1910,8 +1910,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-04-18 14:03:51.759  INFO 8416 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-04-18 14:03:51.761  INFO 8416 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-04-18 14:03:51.874  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a42f788: startup date [Wed Apr 18 14:03:50 CST 2018]; root of context hierarchy
-2018-04-18 14:03:51.890  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-04-18 14:03:51.890  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-04-18 14:03:51.890  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-04-18 14:03:51.890  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-04-18 14:03:51.892  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-04-18 14:03:51.893  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-04-18 14:03:51.905  INFO 8416 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1949,8 +1949,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-04-18 14:04:16.224  INFO 8416 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-04-18 14:04:16.236  INFO 8416 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-04-18 14:04:16.341  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@75ea7c9: startup date [Wed Apr 18 14:04:15 CST 2018]; root of context hierarchy
-2018-04-18 14:04:16.354  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-04-18 14:04:16.355  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-04-18 14:04:16.354  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-04-18 14:04:16.355  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-04-18 14:04:16.357  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-04-18 14:04:16.358  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-04-18 14:04:16.370  INFO 8416 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -1988,8 +1988,8 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-04-18 14:04:32.670  INFO 8416 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
 2018-04-18 14:04:32.687  INFO 8416 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-04-18 14:04:32.793  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39c775e0: startup date [Wed Apr 18 14:04:31 CST 2018]; root of context hierarchy
-2018-04-18 14:04:32.805  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.jupiterboy.springboot.controller.HelloWorldController.index()
-2018-04-18 14:04:32.805  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user]}" onto public com.jupiterboy.springboot.controller.HelloWorldController$User com.jupiterboy.springboot.controller.HelloWorldController.user()
+2018-04-18 14:04:32.805  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String HelloWorldController.index()
+2018-04-18 14:04:32.805  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/myUser]}" onto public HelloWorldController$User HelloWorldController.myUser()
 2018-04-18 14:04:32.809  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-04-18 14:04:32.809  INFO 8416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-04-18 14:04:32.818  INFO 8416 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
