@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>springboot-mybatis-sharding</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>springboot-mybatis-sharding</name>
+    <description>Demo project for Spring Boot</description>
+    <parent>
+        <groupId>com.jupiterboy.springboot</groupId>
+        <artifactId>springboot-demo</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.16</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.2.8</version>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.apache.shardingsphere</groupId>-->
+<!--            <artifactId>sharding-jdbc-spring-boot-starter</artifactId>-->
+<!--            <version>4.1.1</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>io.shardingsphere</groupId>-->
+<!--            <artifactId>sharding-core</artifactId>-->
+<!--            <version>3.1.0</version>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>io.shardingsphere</groupId>
+            <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

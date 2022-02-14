@@ -1,0 +1,13 @@
+server:
+  port: 8002
+
+dubbo:
+  application:
+    name: springboot-dubbe-provider
+  protocol:
+    name: dubbo
+    port: 20881
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  scan:
+    base-packages: com.jupiterboy.springboot
