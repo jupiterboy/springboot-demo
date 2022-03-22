@@ -39,6 +39,8 @@
     <file url="file://$PROJECT_DIR$/springboot-jpa-json/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-jpa-sharding/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-jpa-sharding/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-jpa-snowflake/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-jpa-snowflake/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-jpa/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-jpa/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-jython/src/main/java" charset="UTF-8" />
@@ -79,6 +81,8 @@
     <file url="file://$PROJECT_DIR$/springboot-redis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-retry/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-retry/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rsa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rsa/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-scheduler/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-scheduler/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-sqlite/src/main/java" charset="UTF-8" />
@@ -87,10 +91,14 @@
     <file url="file://$PROJECT_DIR$/springboot-swagger/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-timeit/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-timeit/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-validation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-validation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-vertx/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-vertx/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-watchdog/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-watchdog/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-zmq/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-zmq/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-zookeeper/src/main/java" charset="UTF-8" />

@@ -4,7 +4,11 @@ import org.apache.shardingsphere.core.strategy.keygen.SnowflakeShardingKeyGenera
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
+import java.util.Calendar;
+
+@EnableScheduling
 @SpringBootApplication
 public class JPAShardingApplication {
 
@@ -13,6 +17,7 @@ public class JPAShardingApplication {
         return new SnowflakeShardingKeyGenerator();
     }
     public static void main(String[] args) {
+        System.out.println(Calendar.getInstance().get(Calendar.MONTH));
         SpringApplication.run(JPAShardingApplication.class, args);
     }
 }

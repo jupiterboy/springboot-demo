@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Controller
@@ -23,7 +25,9 @@ public class UserController {
 
     @RequestMapping("/user/save")
     @ResponseBody
-    public String save() {
+    public String save() throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date timestamp = sdf.parse("2022-04-01");
         for (int i = 0; i <10 ; i++) {
             User user=new User();
             user.setId((Long)snowflakeShardingKeyGenerator.generateKey());
@@ -33,7 +37,7 @@ public class UserController {
             user.setSex(i%2);
             user.setPhone("11111111"+i);
             user.setEmail("xxxxx");
-            user.setCreateTime(new Date());
+            user.setCreateTime(timestamp);
             user.setPassword("eeeeeeeeeeee");
             userRepository.save(user);
         }

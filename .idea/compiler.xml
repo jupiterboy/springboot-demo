@@ -21,6 +21,7 @@
         <module name="springboot-jpa" />
         <module name="springboot-dubbe-provider" />
         <module name="springboot-sqlite" />
+        <module name="springboot-timeit" />
         <module name="springboot-commandline" />
         <module name="springboot-kafka" />
         <module name="springboot-mybatis-sharding" />
@@ -29,11 +30,13 @@
         <module name="springboot-event" />
         <module name="springboot-redis-topic" />
         <module name="springboot-scheduler" />
+        <module name="springboot-watchdog" />
         <module name="springboot-ehcache" />
         <module name="springboot-mybatis-plus" />
         <module name="springboot-pb" />
         <module name="spring-boot-kafka" />
         <module name="springboot-mybatis-shardbatis" />
+        <module name="springboot-rsa" />
         <module name="springboot-netty" />
         <module name="springboot-redis" />
         <module name="springboot-minio" />
@@ -48,6 +51,7 @@
         <module name="springboot-docker" />
         <module name="springboot-cache" />
         <module name="springboot-validation" />
+        <module name="springboot-jpa-snowflake" />
         <module name="springboot-mongodb" />
       </profile>
     </annotationProcessing>

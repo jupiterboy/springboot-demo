@@ -48,6 +48,10 @@
         <module>springboot-event-to-kafka</module>
         <module>springboot-redis-topic</module>
         <module>springboot-redis-queue</module>
+        <module>springboot-timeit</module>
+        <module>springboot-jpa-snowflake</module>
+        <module>springboot-rsa</module>
+        <module>springboot-watchdog</module>
     </modules>
     <parent>
         <artifactId>spring-boot-parent</artifactId>

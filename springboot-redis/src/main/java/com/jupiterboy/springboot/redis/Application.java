@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
+import java.util.concurrent.TimeUnit;
+
 @EnableCaching
 @SpringBootApplication
 public class Application implements CommandLineRunner {
@@ -25,6 +27,11 @@ public class Application implements CommandLineRunner {
 		c.setAge(11);
 		c.setAddress("dsafdsfdsa");
 		c.setName("dsaf");
-		template.opsForValue().set("111", c.toString());
-	}
+		template.opsForValue().set("aa1", c.toString(), 30, TimeUnit.SECONDS);
+		template.opsForValue().set("aa2", c.toString(), 35, TimeUnit.SECONDS);
+		template.opsForValue().set("aa3", c.toString(), 40, TimeUnit.SECONDS);
+
+//		template.keys("aa*").stream().map(key -> template.opsForValue().get(key)).forEach(System.out::println);
+
+}
 }
