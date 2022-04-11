@@ -217,4 +217,19 @@ public class RSAUtils {
     }
 
 
+    public static void main(String[] args) throws Exception {
+        List<String> keys = RSAUtils.getRSAKeyString(1024);
+        RSAPublicKey publicKey = RSAUtils.getPublicKey(keys.get(0));
+        RSAPrivateKey privateKey = RSAUtils.getPrivateKey(keys.get(1));
+        System.out.println(keys.get(0));
+        System.out.println(keys.get(1));
+        String msg = "hello";
+
+        String encryptedMsg = RSAUtils.encryptByPrivateKey(msg, privateKey);
+        System.out.println("1="+encryptedMsg);
+
+        String decryptedMsg = RSAUtils.decryptByPublicKey(encryptedMsg, publicKey);
+        System.out.println("2="+decryptedMsg);
+    }
+
 }

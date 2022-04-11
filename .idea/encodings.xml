@@ -57,6 +57,8 @@
     <file url="file://$PROJECT_DIR$/springboot-minio/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-mongodb/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-mongodb/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-monitor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-monitor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-mybatis-plus/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-mybatis-plus/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-mybatis-shardbatis/src/main/java" charset="UTF-8" />
@@ -71,6 +73,10 @@
     <file url="file://$PROJECT_DIR$/springboot-pb/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-profile/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-profile/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq-receiver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq-receiver/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq-sender/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq-sender/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis-cluster/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis-cluster/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis-queue/src/main/java" charset="UTF-8" />
@@ -85,10 +91,14 @@
     <file url="file://$PROJECT_DIR$/springboot-rsa/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-scheduler/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-scheduler/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-shell/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-shell/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-sqlite/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-sqlite/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-swagger/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-swagger/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-tcb-monitor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-tcb-monitor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-timeit/src/main/java" charset="UTF-8" />

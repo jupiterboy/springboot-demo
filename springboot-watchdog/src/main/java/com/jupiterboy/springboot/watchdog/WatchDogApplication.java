@@ -1,27 +1,22 @@
 package com.jupiterboy.springboot.watchdog;
 
-import DLL.UT_DLL;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import java.io.IOException;
 
 @Slf4j
-@SpringBootApplication
 public class WatchDogApplication {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         if(check()) {
-            SpringApplication.run(WatchDogApplication.class, args);
+            log.info("success");
         }else{
-            log.error("WatchDogApplication is not running");
+            log.error("failed");
         }
     }
 
     public static boolean check() {
         try{
-            return new WatchDog().validate();
+            return new WatchDog().test();
         }catch (Exception e){
             e.printStackTrace();
         }

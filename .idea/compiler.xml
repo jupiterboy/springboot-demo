@@ -9,50 +9,54 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-jpa-json" />
         <module name="springboot-retry" />
-        <module name="springboot-jpa-sharding" />
         <module name="springboot-elk" />
-        <module name="springboot-test" />
         <module name="springboot-memcache" />
         <module name="springboot-zmq" />
         <module name="springboot-vertx" />
-        <module name="springboot-docker-jpa" />
         <module name="springboot-event-to-kafka" />
+        <module name="springboot-shell" />
         <module name="springboot-dubbe-consumer" />
-        <module name="springboot-jpa" />
         <module name="springboot-dubbe-provider" />
-        <module name="springboot-sqlite" />
-        <module name="springboot-timeit" />
-        <module name="springboot-commandline" />
+        <module name="springboot-rabbitmq-receiver" />
         <module name="springboot-kafka" />
         <module name="springboot-mybatis-sharding" />
         <module name="springboot-mail" />
         <module name="springboot-profile" />
-        <module name="springboot-event" />
-        <module name="springboot-redis-topic" />
-        <module name="springboot-scheduler" />
-        <module name="springboot-watchdog" />
+        <module name="springboot-tcb-monitor" />
         <module name="springboot-ehcache" />
         <module name="springboot-mybatis-plus" />
-        <module name="springboot-pb" />
+        <module name="springboot-rabbitmq-sender" />
         <module name="spring-boot-kafka" />
         <module name="springboot-mybatis-shardbatis" />
         <module name="springboot-rsa" />
         <module name="springboot-netty" />
-        <module name="springboot-redis" />
         <module name="springboot-minio" />
         <module name="springboot-mina" />
         <module name="springboot-redis-queue" />
         <module name="springboot-dubbe-api" />
+        <module name="springboot-helloworld" />
+        <module name="springboot-docker" />
+        <module name="springboot-cache" />
+        <module name="springboot-jpa-snowflake" />
+        <module name="springboot-mongodb" />
+        <module name="springboot-jpa-sharding" />
+        <module name="springboot-test" />
+        <module name="springboot-docker-jpa" />
+        <module name="springboot-jpa" />
+        <module name="springboot-sqlite" />
+        <module name="springboot-timeit" />
+        <module name="springboot-commandline" />
+        <module name="springboot-event" />
+        <module name="springboot-redis-topic" />
+        <module name="springboot-scheduler" />
+        <module name="springboot-watchdog" />
+        <module name="springboot-pb" />
+        <module name="springboot-redis" />
         <module name="springboot-elasticsearch" />
         <module name="springboot-mybatis" />
         <module name="springboot-zookeeper" />
         <module name="springboot-redis-cluster" />
-        <module name="springboot-helloworld" />
-        <module name="springboot-docker" />
-        <module name="springboot-cache" />
         <module name="springboot-validation" />
-        <module name="springboot-jpa-snowflake" />
-        <module name="springboot-mongodb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -64,6 +68,7 @@
       <module name="springboot-helloworld (1) (com.jupiterboy.springboot)" target="1.8" />
       <module name="springboot-helloworld (2)" target="1.5" />
       <module name="springboot-jython" target="1.5" />
+      <module name="springboot-monitor-module" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

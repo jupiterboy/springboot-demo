@@ -26,6 +26,7 @@
         <option value="$PROJECT_DIR$/springboot-cache-redis/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-event-kafka/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-jython/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-monitor-module/pom.xml" />
       </set>
     </option>
   </component>
