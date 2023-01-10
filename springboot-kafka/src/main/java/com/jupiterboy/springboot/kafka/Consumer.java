@@ -27,7 +27,7 @@ import java.util.Optional;
 @Component
 class Consumer {
 
-	@KafkaListener(topics = "myuser", groupId="123")
+	@KafkaListener(topics = "user", groupId="123")
 	public void consumer(ConsumerRecord consumerRecord){
 		Optional<Object> kafkaMassage = Optional.ofNullable(consumerRecord.value());
 		if(kafkaMassage.isPresent()){
@@ -35,12 +35,30 @@ class Consumer {
 			System.out.println(o);
 		}
 	}
+	@KafkaListener(topics = "msg", groupId="456")
+	public void consumer1(ConsumerRecord consumerRecord){
+		Optional<Object> kafkaMassage = Optional.ofNullable(consumerRecord.value());
+		if(kafkaMassage.isPresent()){
+			Object o = kafkaMassage.get();
+			System.out.println(o);
+		}
+	}
 
-//	@KafkaListener(topicPattern = "us.*", groupId="456")
-//	public void listenPattern(ConsumerRecord<String, String> record) {
-//		Optional<String> kafkaMessage = Optional.ofNullable(record.value());
+//	@KafkaListener(topicPattern = "msg", groupId="456")
+//	public void listenPattern(ConsumerRecord<String, SampleMessage> record) {
+//		Optional<SampleMessage> kafkaMessage = Optional.ofNullable(record.value());
 //		if (kafkaMessage.isPresent()) {
 //			log.info("topic : {}, mes : {}", record.topic(), kafkaMessage.get());
+//			System.out.println(kafkaMessage.get());
+//		}
+//	}
+
+//	@KafkaListener(topicPattern = "msg", groupId="456")
+//	public void listenPattern(ConsumerRecord<String, SampleMessage> record) {
+//		Optional<SampleMessage> kafkaMessage = Optional.ofNullable(record.value());
+//		if (kafkaMessage.isPresent()) {
+//			log.info("topic : {}, mes : {}", record.topic(), kafkaMessage.get());
+//			System.out.println(kafkaMessage.get());
 //		}
 //	}
 }

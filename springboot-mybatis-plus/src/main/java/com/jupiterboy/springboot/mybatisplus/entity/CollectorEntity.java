@@ -5,7 +5,6 @@ import com.jupiterboy.springboot.mybatisplus.parameter.CollectorParameter;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.beans.Transient;
 import java.util.HashSet;
 import java.util.Set;
 

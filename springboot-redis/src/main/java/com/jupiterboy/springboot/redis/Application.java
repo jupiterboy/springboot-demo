@@ -22,16 +22,16 @@ public class Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Customer c = new Customer();
-		c.setId(""+System.currentTimeMillis());
-		c.setAge(11);
-		c.setAddress("dsafdsfdsa");
-		c.setName("dsaf");
-		template.opsForValue().set("aa1", c.toString(), 30, TimeUnit.SECONDS);
-		template.opsForValue().set("aa2", c.toString(), 35, TimeUnit.SECONDS);
-		template.opsForValue().set("aa3", c.toString(), 40, TimeUnit.SECONDS);
+//		Customer c = new Customer();
+//		c.setId(""+System.currentTimeMillis());
+//		c.setAge(11);
+//		c.setAddress("dsafdsfdsa");
+//		c.setName("dsaf");
+//		template.opsForValue().set("aa1", c.toString(), 1000, TimeUnit.SECONDS);
+//		template.opsForValue().set("aa2", c.toString(), 1100, TimeUnit.SECONDS);
+//		template.opsForValue().set("aa3", c.toString(), 1200, TimeUnit.SECONDS);
 
-//		template.keys("aa*").stream().map(key -> template.opsForValue().get(key)).forEach(System.out::println);
+		template.keys("aa*").stream().map(key -> template.opsForValue().get(key)).forEach(System.out::println);
 
-}
+	}
 }

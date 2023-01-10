@@ -16,19 +16,29 @@ public class hwserver
     {
         try (ZContext context = new ZContext()) {
             // Socket to talk to clients
-            ZMQ.Socket socket = context.createSocket(SocketType.REP);
-            socket.bind("tcp://*:5555");
+//            ZMQ.Socket socket = context.createSocket(SocketType.PUB);
+//            socket.bind("tcp://*:5555");
+//
+//            while (!Thread.currentThread().isInterrupted()) {
+//                byte[] reply = socket.recv(0);
+//                System.out.println(
+//                    "Received " + ": [" + new String(reply, ZMQ.CHARSET) + "]"
+//                );
+//
+//                Thread.sleep(1000); //  Do some 'work'
+//
+//                String response = "world";
+//                socket.send(response.getBytes(ZMQ.CHARSET), 0);
+//            }
 
+            ZMQ.Socket socket = context.createSocket(SocketType.SUB);
+            socket.connect("tcp://localhost:5555");
+            socket.subscribe("hello".getBytes());
             while (!Thread.currentThread().isInterrupted()) {
                 byte[] reply = socket.recv(0);
                 System.out.println(
-                    "Received " + ": [" + new String(reply, ZMQ.CHARSET) + "]"
+                        "Received " + ": [" + new String(reply, ZMQ.CHARSET) + "]"
                 );
-
-                Thread.sleep(1000); //  Do some 'work'
-
-                String response = "world";
-                socket.send(response.getBytes(ZMQ.CHARSET), 0);
             }
         }
     }

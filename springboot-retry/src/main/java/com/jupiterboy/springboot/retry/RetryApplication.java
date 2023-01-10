@@ -36,7 +36,7 @@ public class RetryApplication implements CommandLineRunner {
 @Slf4j
 class MyServcie{
 
-    @Retryable(value= {RemoteAccessException.class},maxAttempts = 3,backoff = @Backoff(delay = 5000l,multiplier = 1))
+    @Retryable(value= {RemoteAccessException.class}, maxAttempts = 3, backoff = @Backoff(delay = 5000l,multiplier = 1))
     public void service()  {
         try {
             log.info("do something...");

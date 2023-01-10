@@ -26,22 +26,22 @@ public class MybatisPlusApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		// 添加采集器
-		CollectorEntity collectorEntity = new CollectorEntity();
-		collectorEntity.setName("collector-1");
-		collectorEntity.setNumber("1");
-
-		collectorEntity.setParameter(CollectorParameter.builder().field1("127").build());
-
-		collectorService.save(collectorEntity);
-
-		ChannelEntity channelEntity = new ChannelEntity();
-		channelEntity.setType(1);
-		channelEntity.setName("channel-1");
-		channelEntity.setNumber("1");
-
-		channelEntity.setCollectorId(collectorEntity.getId());
-		channelService.save(channelEntity);
+//		// 添加采集器
+//		CollectorEntity collectorEntity = new CollectorEntity();
+//		collectorEntity.setName("collector-1");
+//		collectorEntity.setNumber("1");
+//
+//		collectorEntity.setParameter(CollectorParameter.builder().field1("127").build());
+//
+//		collectorService.save(collectorEntity);
+//
+//		ChannelEntity channelEntity = new ChannelEntity();
+//		channelEntity.setType(1);
+//		channelEntity.setName("channel-1");
+//		channelEntity.setNumber("1");
+//
+//		channelEntity.setCollectorId(collectorEntity.getId());
+//		channelService.save(channelEntity);
 
 		System.out.println(JsonUtils.toPrettyJson(collectorService.getById("481ee6f72c2f361bfcf99dd13e35858b")));
 

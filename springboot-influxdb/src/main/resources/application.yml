@@ -1,0 +1,6 @@
+spring:
+  influx:
+    url: http://localhost:8086 #influxdb服务器的地址
+    user: root #用户名
+    password: 12345678 #密码
+    database: mydb #指定的数据库

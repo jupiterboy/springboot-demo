@@ -12,11 +12,9 @@ import java.util.Base64;
 import java.util.List;
 
 /**
- * @ClassName: RsaUtils
- * @Description: TODO
- * @Author: zhānghào
- * @Date: 2021/4/25 3:29 下午
- * @Version: v1.0
+ * @author: yuhai
+ *
+ * RSA校验工具
  **/
 public class RSAUtils {
 
@@ -222,6 +220,5 @@ public class RSAUtils {
         }
         return result;
     }
-
 
 }

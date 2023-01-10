@@ -18,6 +18,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-jpa-sqlserver/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-wechat/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

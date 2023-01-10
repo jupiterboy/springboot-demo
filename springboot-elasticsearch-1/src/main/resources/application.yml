@@ -1,0 +1,4 @@
+spring:
+  elasticsearch:
+    rest:
+      url: localhost:9200

@@ -17,23 +17,28 @@
 package com.jupiterboy.springboot.kafka;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import javax.annotation.PostConstruct;
-
 @SpringBootApplication
-public class SampleKafkaApplication {
+public class SampleKafkaApplication implements CommandLineRunner {
 
 	@Autowired
 	private Producer producer;
-	@PostConstruct
-	public void init(){
-		for(int i=0;i<10;i++){
-			producer.send("afs"+i);
-		}
-	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(SampleKafkaApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		for(int i=0;i<10;i++){
+			SampleMessage msg = new SampleMessage();
+			msg.setId(i);
+			msg.setMessage("afs"+i);
+			producer.send(msg);
+//			producer.send("afs"+i);
+		}
 	}
 }
