@@ -40,14 +40,10 @@ public class WeChatController {
         log.info("signature: " + signature + " timestamp: " + timestamp + " nonce: " + nonce + " echostr: " + echostr);
 
         // 如果验证不通过，则不是来自微信的请求，即非法请求
-        if (!mWxMpService.checkSignature(timestamp, nonce, signature)) {
-            return "非法请求";
-        }
-
-        if (StringUtils.isNotBlank(echostr)) {
+        if (mWxMpService.checkSignature(timestamp, nonce, signature) && StringUtils.isNotBlank(echostr)) {
             return echostr;
         }
-        return null;
+        return "非法请求";
     }
 
 }

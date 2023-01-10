@@ -2,6 +2,7 @@ package com.jupiterboy.springboot.uniapp.controller;
 
 import com.jupiterboy.springboot.uniapp.service.UniAppService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +16,8 @@ import java.io.IOException;
 public class UniAppController {
 
     @Autowired private UniAppService uniAppService;
+
+    private static final String TOKEN = "shtmp";
 
     @RequestMapping("/uniapp/push")
     public void pushMessage() {
@@ -31,10 +34,11 @@ public class UniAppController {
         String echostr = request.getParameter("echostr");
         log.info("signature: " + signature + " timestamp: " + timestamp + " nonce: " + nonce + " echostr: " + echostr);
 
-        if (StringUtils.isNotBlank(echostr)) {
+        String tmp = new StringBuilder().append(TOKEN).append(timestamp).append(nonce).toString();
+        if(DigestUtils.sha1Hex(tmp).equals(signature) && StringUtils.isNotBlank(echostr)){
             return echostr;
         }
-        return null;
+        return "Invalid";
     }
 
 }
