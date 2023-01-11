@@ -7,13 +7,12 @@ import me.chanjar.weixin.mp.api.WxMpService;
 import me.chanjar.weixin.mp.bean.template.WxMpTemplateData;
 import me.chanjar.weixin.mp.bean.template.WxMpTemplateMessage;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Slf4j
-@Service
+//@Service
 public class WeChatServiceImpl implements WeChatService {
 
     private static final String TEMPLATE_ID = "WYrR2-yBCWdwjrdjOpIVLkzE5qrZLIJpl2YidebNu-g";
@@ -41,6 +40,11 @@ public class WeChatServiceImpl implements WeChatService {
             log.error("推送失败!");
             e.printStackTrace();
         }
+
+    }
+
+    @Override
+    public void pushMessage(String openId, String first, String keyword1, String keyword2, String keyword3, String keyword4, String keyword5, String remark) {
 
     }
 }

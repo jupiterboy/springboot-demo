@@ -23,11 +23,17 @@ public class WeChatController {
     @Autowired
     private WxMpService mWxMpService = null;
 
-
-    @RequestMapping("/wechat/push")
-    public void pushMessage() {
+    @RequestMapping("/wechat/push1")
+    public void push1() {
         String openId = "ohfLP5KYvFPFcp5jWd2MBFNglTt8";
         weChatService.pushMessage(openId, "测试内容", "测试备注");
+    }
+
+    @RequestMapping("/wechat/push2")
+    public void push2() {
+        String openId = "oWIrY1WuF8Mymbk4BkjPgQ6XrRPU";
+        weChatService.pushMessage(openId, "尊敬客户，您的设备有新通知，请及时查看", "设备预警", "天津",
+                "通广科技园", "测试样机", "2023-01-11 09:36:32", "设备编号为D0000001");
     }
 
     @RequestMapping(value = "/service")

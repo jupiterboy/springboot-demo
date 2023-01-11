@@ -22,10 +22,10 @@ public class WeChatApplication {
 	@Bean
 	public WxMpConfigStorage wxMpConfigStorage() {
 		WxMpInMemoryConfigStorage config = new WxMpInMemoryConfigStorage();
-		config.setAppId("wx4f3c0c7b50459789"); // 设置微信公众号的appid
-		config.setSecret("b953bc752b650a917bed314dd4686a1b"); // 设置微信公众号的app corpSecret
-		config.setToken("shtmp"); // 设置微信公众号的token
-		config.setAesKey("x6RmXTRqmaQx2wruj6Cys8eUyrKNnRXMmsAKXkVjgGc"); // 设置微信公众号的EncodingAESKey
+		config.setAppId("wx4f8732f26d4364a4"); // 设置微信公众号的appid
+		config.setSecret("5ac7c9bd6d8c2120ddf6a67ad2136048"); // 设置微信公众号的app corpSecret
+		config.setToken("weixin"); // 设置微信公众号的token
+		config.setAesKey("9SpZIoLtQ9j9ZGEWStbyleG4glihCabEukS67tL0Q8R"); // 设置微信公众号的EncodingAESKey
 		return config;
 	}
 
