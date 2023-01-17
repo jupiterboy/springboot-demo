@@ -64,6 +64,7 @@
         <module>springboot-sysinfo</module>
         <module>springboot-jpa-sqlserver</module>
         <module>springboot-uniapp</module>
+        <module>springboot-transation</module>
 
     </modules>
     <parent>
